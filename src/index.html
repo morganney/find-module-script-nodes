@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Find Module Script DOM Nodes</title>
+  </head>
+  <body>
+    <script>
+      var counted = 1
+      var script = null
+    </script>
+    <p>content before first module script</p>
+    <script type="module">
+      script = document.scripts[counted++]
+      script.insertAdjacentHTML('afterend', `<p>inserted after ${counted - 1} module script</p>`)
+    </script>
+    <p>content after first module script</p>
+    <p>content before second module script</p>
+    <script type="module">
+      script = document.scripts[counted++]
+      script.insertAdjacentHTML('afterend', `<p>inserted after ${counted - 1} module script</p>`)
+    </script>
+    <p>content after second module script</p>
+    <p>content before third module script</p>
+    <script type="module">
+      script = document.scripts[counted++]
+      script.insertAdjacentHTML('afterend', `<p>inserted after ${counted - 1} module script</p>`)
+    </script>
+    <p>content after third module script</p>
+  </body>
+</html>

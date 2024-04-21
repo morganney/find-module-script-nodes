@@ -1,0 +1,29 @@
+{
+  "name": "find-module-script-nodes",
+  "version": "1.0.0",
+  "description": "https://stackoverflow.com/questions/78333374/any-optimal-way-to-get-dom-element-of-a-script-module-from-the-module",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "prettier": "prettier -w .",
+    "preview": "serve"
+  },
+  "keywords": [
+    "dom",
+    "node",
+    "module",
+    "script"
+  ],
+  "author": "Morgan Ney <morganney@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "serve": "^14.2.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "printWidth": 119
+  }
+}
